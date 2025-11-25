@@ -136,14 +136,14 @@ const ProductsPage = ({ products, addProduct, addToCart, removeFromCart, cart })
               {isInCart(product.id) ? (
                 <button 
                   onClick={() => removeFromCart(product.id)}
-                  style={{ padding: '8px 12px', backgroundColor: '#f44336', color: 'white', border: 'none', cursor: 'pointer' }}
+                  style={{ padding: '8px 12px', backgroundColor: 'red', color: 'white', border: 'none', cursor: 'pointer' }}
                 >
                   Remove from Cart
                 </button>
               ) : (
                 <button 
                   onClick={() => addToCart(product)}
-                  style={{ padding: '8px 12px', backgroundColor: '#4CAF50', color: 'white', border: 'none', cursor: 'pointer' }}
+                  style={{ padding: '8px 12px', backgroundColor: 'green', color: 'white', border: 'none', cursor: 'pointer' }}
                 >
                   Add to Cart
                 </button>
