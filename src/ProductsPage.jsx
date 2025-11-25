@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const ProductsPage = ({ products, addProduct, addToCart, removeFromCart, cart }) => {
   const [searchTerm, setSearchTerm] = useState('');
